@@ -4,4 +4,10 @@
 *.log
 *.swp
 *.aux
+*.lof
+*.lot
+*.out
+*.pdf
+*.synctex.gz
+*.toc
 
