@@ -1,7 +1,7 @@
 PS2PDF=ps2pdf
 MPOST=mpost
 #FIGURES=figure1.pdf figure2.pdf
-CHAPTERS=BibleHaptique.tex 1_Bible/Chapters/laPeau.tex
+CHAPTERS=BibleHaptique.tex 
 LTX=pdflatex
 BTX=bibtex
 
