@@ -1,0 +1,73 @@
+\documentclass[these,auteur-annee,electrique, francais]{0_Hors_contenu/Apparences/udes-genie-demt-V1}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{natbib} % for extra citation command
+\usepackage{textcomp} % to use specific charactere
+
+%package to include picture, figures, table %%%%%%%%%%%
+\usepackage{graphicx}
+\graphicspath{ {1_Bilble/Photos/} }
+%\usepackage{xprintlen}
+
+\usepackage{rotating}
+\usepackage{array,multirow}
+\usepackage{booktabs}
+\usepackage{tabularx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%change internal link from red to black - especially for ToC
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{%
+  colorlinks = true,
+  linkcolor  = black
+}
+
+%change text, sections, .. colors
+\usepackage[dvipsnames]{xcolor}
+
+
+%Custom things units %%%%%%%%%%%%%%%%%%
+\usepackage{siunitx}
+\let\DeclareUSUnit\DeclareSIUnit
+\let\US\SI
+\DeclareUSUnit\inch{\mydprime}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{0_Hors_contenu/Informations/command}
+
+\MotsCles{Haptique, Neuroscience, Systéme somatosensoriel}
+\FichierResume{0_Hors_contenu/Informations/resume}
+\FichierRemerciements{0_Hors_contenu/Informations/merci}
+\FichiersBibliographiques{0_Hors_contenu/Informations/references}
+
+\Dedicace{Aux dauphins}
+\FichierLexique{0_Hors_contenu/Informations/lexique}
+\FichierSymboles{0_Hors_contenu/Informations/symboles}
+\FichierAcronymes{0_Hors_contenu/Informations/acronymes}
+
+\begin{document}
+
+%\tableofcontents %generate and print ToC
+
+\part{Bible Haptique\\ R\'esum\'e des connaissances}
+	
+	\input{1_Bible/Chapters/leSn}
+	\input{1_Bible/Chapters/laPeau}
+	\input{1_Bible/Chapters/sensPerception}
+	\input{1_Bible/Chapters/sensationTactile}
+	\input{1_Bible/Chapters/perceptionTactile}
+	\input{1_Bible/Chapters/technologies}
+	\input{1_Bible/Chapters/equipementAcqui}
+	
+
+\part{Fiches des articles}
+	\chapter{Biom\'{e}canique}
+		\input{2_Fiche_lecture/Articles/2012-Adams/2012-Adams}
+
+\appendix
+
+\input{1_Bible/Chapters/appTest}
+
+\end{document}
