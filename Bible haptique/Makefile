@@ -1,7 +1,29 @@
 PS2PDF=ps2pdf
 MPOST=mpost
 #FIGURES=figure1.pdf figure2.pdf
-CHAPTERS=BibleHaptique.tex 
+CHAPTERS=BibleHaptique.tex \
+				1_Bible/Chapters/1_Sens_Sensation_Perception/0.Sens_Sensation_Perception.tex \
+				      1_Bible/Chapters/1_Sens_Sensation_Perception/1.Les_sens.tex \
+				      1_Bible/Chapters/1_Sens_Sensation_Perception/2.Distinction_Sensation_Perception.tex \
+				      1_Bible/Chapters/1_Sens_Sensation_Perception/3.Multi_Modal.tex \
+				      1_Bible/Chapters/1_Sens_Sensation_Perception/4.Illusions.tex \
+				 1_Bible/Chapters/2_Sensation_Tactile/0.Sensation_Tactile.tex \
+				      1_Bible/Chapters/2_Sensation_Tactile/1.Chemin.tex \
+				      1_Bible/Chapters/2_Sensation_Tactile/2.Contact.tex \
+				      1_Bible/Chapters/2_Sensation_Tactile/3.Transduction.tex \
+				      1_Bible/Chapters/2_Sensation_Tactile/4.Spike.tex \
+				      1_Bible/Chapters/2_Sensation_Tactile/5.Psychophysique.tex \
+				 1_Bible/Chapters/3_Perception_Tactile/0.Perception_Tactile.tex \
+				      1_Bible/Chapters/3_Perception_Tactile/1.EP.tex \
+				      1_Bible/Chapters/3_Perception_Tactile/2.Dimension.tex \
+				      1_Bible/Chapters/3_Perception_Tactile/3.Information_Transfer.tex \
+				      1_Bible/Chapters/3_Perception_Tactile/4.Type.tex \
+				 1_Bible/Chapters/4_Haptique_et_Technologie/0.Haptique_et_Technologie.tex \
+				      1_Bible/Chapters/4_Haptique_et_Technologie/1.Equipement_Acquisition.tex \
+				      1_Bible/Chapters/4_Haptique_et_Technologie/1.Recepteurs.tex \
+				      1_Bible/Chapters/4_Haptique_et_Technologie/2.Actionneurs.tex \
+				 1_Bible/Chapters/5_La_Peau/0.La_Peau.tex \
+				 1_Bible/Chapters/6_Le_Systeme_Nerveux/0.Le_Systeme_Nerveux.tex 
 LTX=pdflatex
 BTX=bibtex
 
@@ -59,5 +81,5 @@ all: BibleHaptique.pdf
 
 .PHONY: clean
 clean:
-	@rm -f *.aux *.bbl *.blg *.log.bak *.log *.toc *.out *.mpx mpxerr.tex Thesis.pdf
+	@rm -f *.aux *.bbl *.blg *.log.bak *.log *.toc *.out *.mpx mpxerr.tex BilbleHaptique.pdf
 	@rm -fr _minted-mapping
